@@ -154,6 +154,47 @@ jQuery(document).ready(function($) {
 	padding-top: .7em;
 	padding-bottom: 20%;
 	}
+	
+	@media all and (max-width: 480px){ 	
+	.ui-navbar li .ui-btn .ui-btn-inner { padding-bottom: 22% !important; } 
+	.ui-header-fixed { top: -13px; height: 15%; }
+	} 		
+	
+	/* iPhone Horizontal -------------------*/ 
+	@media all and (min-width: 480px){ 	
+	.ui-navbar li .ui-btn .ui-btn-inner { padding-bottom: 18% !important; } 
+	} 		
+	
+	/* iPad Verticle -----------------------*/ 
+	@media only screen and (min-width: 768px) {
+	.ui-navbar li .ui-btn .ui-btn-inner { padding-bottom: 12% !important; } 
+	}  
+	
+	/* iPad Horizontal ---------------------*/ 
+	@media only screen and (min-width: 1024px) {     
+	.ui-navbar li .ui-btn .ui-btn-inner { padding-bottom: 10% !important; } 
+	}  
+	
+	/* Nexus 7 Horizontal ------------------*/ 
+	@media only screen and (min-width: 1280px) {     
+	.ui-navbar li .ui-btn .ui-btn-inner { padding-bottom: 10% !important; } 
+	}  
+	
+	/* Laptop 1440 -------------------------*/ 
+	@media only screen and (min-width: 1440px) {     
+	.ui-navbar li .ui-btn .ui-btn-inner { padding-bottom: 10% !important; } 
+	}  
+	
+	/* Monitor 1600 ------------------------*/ 
+	@media only screen and (min-width: 1600px) {
+	.ui-navbar li .ui-btn .ui-btn-inner { padding-bottom: 10% !important; } 
+	}  
+	
+	/* Monitor 1920 ------------------------*/ 
+	@media only screen and (min-width: 1920px) {     
+	.ui-navbar li .ui-btn .ui-btn-inner { width: 20% !important; } 
+	} 
+	
 	.plus {
 	font-size: xx-large;
 	padding: 6% 2% 6% 15%;
