@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Aus den Baha'i-Schriften</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="jquery2.mobile-1.3.1.min.css" />
+
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+
+
+
+<script src="jquery.mobile-1.3.1.min.js"></script>
+
+
+        
+        <script type="text/javascript">
+jQuery(document).ready(function($) {
+     $.get('quotes.txt', function(data) {
+         var quotes = data.split("\@");
+         var idx = Math.floor(quotes.length * Math.random());
+         $('.quotes').html(quotes[idx]);
+     });
+ });
+</script>
+
+        <script type="text/javascript">
+jQuery(document).ready(function($) {
+     $.get('verse.txt', function(data) {
+         var verse = data.split("\@");
+         var idx = Math.floor(verse.length * Math.random());
+         $('.verse').html(verse[idx]);
+     });
+ });
+</script>
+
+        <script type="text/javascript">
+jQuery(document).ready(function($) {
+     $.get('gebete.txt', function(data) {
+         var gebete = data.split("\@");
+         var idx = Math.floor(gebete.length * Math.random());
+         $('.gebete').html(gebete[idx]);
+     });
+ });
+</script>
+
+
+    <script type="text/javascript" src="jquery.creaseFont.min.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function(){
+	  $.creaseFont({
+                 content:'.container',
+                 unit:'%',
+                 defaultSize:120,
+                 maxSize:500,
+                 minSize:40,
+                 stepSize:10,
+                 animate     :  true,
+          		 animateSpeed:  500,
+          		 cookieName  :  'creaseFont',
+          		 cookiePath  :  '/',
+          		 cookieLifetime:365
+                 });
+	});
+	</script>
+	
+    <script type="text/javascript" src="jquery.creaseFont.min.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function(){
+	  $.creaseFont({
+                 content:'.container2',
+                 unit:'%',
+                 defaultSize:120,
+                 maxSize:500,
+                 minSize:40,
+                 stepSize:10,
+                 animate     :  true,
+          		 animateSpeed:  500,
+          		 cookieName  :  'creaseFont',
+          		 cookiePath  :  '/',
+          		 cookieLifetime:365
+                 });
+	});
+	</script>	
+	
+<style type="text/css">
+	body {
+    text-shadow: 0 1px 0 rgb(255, 255, 255);
+	font-size: x-small;
+	}
+<!-- 	.ui-page {
+	background: linear-gradient(#F9F9F9, #FFCC99) !important repeat scroll 0 0 #F9F9F9;	
+	} -->
+	.popup{ 
+	font-size: 0.7em;
+	background: #f2f2f2;
+	color: #5f98c5;
+	}
+	.container {
+	 margin: 0% 0% 0 1%;
+	}
+    .quotes {
+	text-align: left;
+	vertical-align:middle;
+	letter-spacing: 0.1em;
+	display: table-cell;
+	line-height: 1em;
+    }
+	.quotes:first-letter{ 
+	font-size: 1em;
+	color: #5f98c5;
+	}
+	.quotes:first-line { 
+	line-height: 1em; 
+	}    
+	.verse {
+	text-align: left;
+	vertical-align:middle;
+	letter-spacing: 0.1em;
+	display: table-cell;
+	line-height: 1em;
+    }
+   	.verse:first-letter{ 
+	font-size: 1em;
+	color: #5f98c5;
+	}
+	.verse:first-line { 
+	line-height: 10em; 
+	}
+	.gebete {
+	text-align: left;
+	vertical-align:middle;
+	letter-spacing: 0.1em;
+	display: table-cell;
+	line-height: 1em;
+    }
+   	.gebete:first-letter{ 
+	font-size: 1em;
+	color: #5f98c5;
+	}
+	.gebete:first-line { 
+	line-height: 1em; 
+	}
+	.ui-li, .ui-li.ui-field-contain {
+	margin: 0 10% 0;
+	}
+	.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+/* 	padding: 5% 5%; */
+	display: block;
+	font-size: 100%;
+	}
+	.ui-navbar li .ui-btn .ui-btn-inner {
+	padding-top: .1em;
+	padding-bottom: 20%;
+	}
+	.plus {
+	font-size: xx-large;
+	padding: 1% 2% 1% 1%;
+	}
+	.ui-body-c .ui-link {	
+	font-size: xsmall;
+	text-decoration: none;
+	color: #000000;
+	}
+	.ui-body-c .ui-link:visited {
+	color: #000000;
+	}
+	.ui-content-hell{
+background: #f2f2f2; /* Old browsers */
+background: -moz-linear-gradient(45deg, #f2f2f2 0%, #cbd2db 48%, #d8e1e7 50%, #eaf2f7 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#f2f2f2), color-stop(48%,#cbd2db), color-stop(50%,#d8e1e7), color-stop(100%,#eaf2f7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg, #f2f2f2 0%,#cbd2db 48%,#d8e1e7 50%,#eaf2f7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg, #f2f2f2 0%,#cbd2db 48%,#d8e1e7 50%,#eaf2f7 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg, #f2f2f2 0%,#cbd2db 48%,#d8e1e7 50%,#eaf2f7 100%); /* IE10+ */
+background: linear-gradient(45deg, #f2f2f2 0%,#cbd2db 48%,#d8e1e7 50%,#eaf2f7 100%); /* W3C */
+	color: #000000 !important;
+	border:1px solid #aaa;
+    }
+	.ui-content-hell1{
+	background: #f2f2f2;
+	}
+	.ui-content-dunkel{
+	<!-- background:#4f6a73; blau --> 
+	background:#D9C99A;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#686C72),to(#444444));
+	background-image:-webkit-linear-gradient(#686C72,#444444);
+	background-image:-moz-linear-gradient(#686C72,#444444);
+	background-image:-ms-linear-gradient(#686C72,#444444);
+	background-image:-o-linear-gradient(#686C72,#444444);
+	background-image:linear-gradient(#686C72,#444444) color: #000000 !important;
+	color: #F7F7F7 !important;
+	border:1px solid #aaa;
+    }
+
+	.img150
+	{
+	float: left;
+	width: 20%;
+	padding: 1%;
+	font-size: 0.7em;
+	}
+	.widewid{
+		
+			margin: 1% 1% 1% 1%;
+	}
+</style>
+	
+	
+</head>
+<body>
+
+<!-- page -->
+<div data-role="page" id="page" class="ui-content-hell1">
+
+	<!-- header-->
+	<!-- Info -->	
+	<!-- /Info -->	
+	<!-- /header -->
+
+	<!-- content -->
+	<div data-role="content">	
+	
+<!-- 		<div class="img150">
+			<a href="#page2"><img src="Bilder/buch-vw.jpg" width="20%" border="0" alt="Verborgene Worte"><br />Die Verborgenen Worte</a>
+		</div> 
+		<div class="img150">
+			<a href="#page3"><img src="Bilder/buch-vg.jpg" width="20%" border="0" alt="Verse Gottes"><br />Verse Gottes</a>
+		</div> 
+		<div class="img150">
+			<a href="#page4"><img src="Bilder/buch-geb.jpg" width="20%" border="0" alt="Gebete"><br />Gebete</a>
+		</div> 
+		<div class="img150">
+			<a href="#page5"><img src="Bilder/buch-gebmed.jpg" width="20%" border="0" alt="Gebete und Meditationen"><br />Gebete und Meditationen</a>
+		</div> 
+ -->
+		<ul data-role="listview" data-icon="false" data-theme="c">
+			<li><a href="#page2">
+				<img src="Bilder/buch-vw.jpg" />
+			
+	
+			</a></li>
+			<li><a href="#page3">
+				<img src="Bilder/buch-vg.jpg" />
+		
+			</a></li>
+			<li><a href="#page4">
+				<img src="Bilder/buch-geb.jpg" />
+	
+			</a></li>
+<!-- 			<li><a href="#page5">
+				<img src="Bilder/buch-gebmed.jpg" />
+				<h3>Gebete und Meditationen</h3>
+				<p>Bahá'u'lláh</p>
+			</a></li> -->
+		</ul>		
+		
+		
+		
+		
+		
+		
+<!-- 	    <div class="ui-grid-a" style="text-align:center">
+			<div class="ui-block-a"><a href="#page2"><img src="Bilder/buch-vw.jpg" width="50%"  /><br />Verborgene Worte</a></div>
+		    <div class="ui-block-b"><a href="#page3"><img src="Bilder/buch-vg.jpg" width="50%" /><br />Verse Gottes</a></div>
+   		    <div class="ui-block-c"><a href="#page4"><img src="Bilder/buch-geb.jpg" width="50%"  /><br />Gebete</a></div>
+		    <div class="ui-block-d"><a href="#page5"><img src="Bilder/buch-gebmed.jpg" width="50%"  /><br />Gebete und Meditationen</a></div>
+        </div> -->
+		
+	</div>
+
+	
+	<!-- /content -->
+
+	<!-- footer -->
+	<!-- /footer -->
+</div>
+<!-- /page -->
+
+<!-- page2 -->
+<div data-role="page" id="page2" class="ui-content-hell">
+	
+	<!-- header-->
+	<!-- /header -->
+	<!-- Popup -->
+	<div data-role="popup" id="popupBasic" class="popup">
+		<h4>Größe:</h4><br/>
+				<span id="fontLarge" style="cursor:pointer" class="plus" data-role="button" data-icon="plus" data-inline="true"></span>
+				<span id="fontDefault" style="cursor:pointer" class="plus" data-role="button" data-icon="delete" data-inline="true"></span>
+				<span id="fontSmall" style="cursor:pointer" class="plus" data-role="button" data-icon="minus" data-inline="true"></span>
+	</div>
+	<!-- /Popup -->
+
+	<!-- content -->
+	<div data-role="content">	
+		<br/><div class="container"><div class="quotes"></div></div><br/>	
+	</div>
+	<!-- /content -->
+
+	<!-- footer -->
+	<div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#popupBasic" data-rel="popup" data-inline="true" data-transition="pop" data-icon="gear" data-iconpos="top"></a></li> 
+			<li><a href="#page" data-icon="home" data-iconpos="top"></a></li>
+			<li><a href="javascript:location.reload()" data-transition="slidedown" data-icon="arrow-r" data-iconpos="top"></a></li>
+		</ul>
+	</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page2 -->
+
+
+<!-- page3 -->
+<div data-role="page" id="page3" class="ui-content-hell">
+
+	<!-- header -->
+	<!-- /header -->
+	
+	<!-- Popup -->
+	<div data-role="popup" id="popupBasic2" class="popup">
+		<h4>Größe:</h4><br/>
+				<span id="fontLarge2" style="cursor:pointer" class="plus" data-role="button" data-icon="plus" data-inline="true"></span>
+				<span id="fontDefault2" style="cursor:pointer" class="plus" data-role="button" data-icon="delete" data-inline="true"></span>
+				<span id="fontSmall2" style="cursor:pointer" class="plus" data-role="button" data-icon="minus" data-inline="true"></span>
+	</div>
+	<!-- /Popup -->	
+	
+
+
+
+	<!-- content -->
+	<div data-role="content">	
+		<br/><div class="container2"><div class="verse"></div></div><br/>	
+	</div>
+	<!-- /content -->
+	
+	<!-- footer -->
+	<div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+<!-- 			<li><a href="#popupBasic2" data-rel="popup" data-inline="true" data-transition="pop" data-icon="gear" data-iconpos="top"></a></li> -->
+			<li><a href="#page" data-icon="home" data-iconpos="top"></a></li>
+<!-- 			<li><a href="#positionWindow" data-icon="info" data-rel="popup" data-position-to="window"></a></li> -->
+			<li><a href="javascript:location.reload()" data-transition="slidedown" data-icon="arrow-r" data-iconpos="top"></a></li>
+		</ul>
+	</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page3 -->
+
+
+
+<!-- page2 -->
+<div data-role="page" id="page4" class="ui-content-hell">
+	
+	<!-- header-->
+	<!-- /header -->
+
+	<!-- Popup -->
+	<div data-role="popup" id="popupBasic" class="popup">
+		<h4>Größe:</h4><br/>
+				<span id="fontLarge" style="cursor:pointer" class="plus" data-role="button" data-icon="plus" data-inline="true"></span>
+				<span id="fontDefault" style="cursor:pointer" class="plus" data-role="button" data-icon="delete" data-inline="true"></span>
+				<span id="fontSmall" style="cursor:pointer" class="plus" data-role="button" data-icon="minus" data-inline="true"></span>
+	</div>
+	<!-- /Popup -->
+
+	<!-- content -->
+	<div data-role="content">	
+		<br/><div class="container"><div class="gebete"></div></div><br/>	
+	</div>
+	<!-- /content -->
+
+	<!-- footer -->
+	<div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+<!-- 			<li><a href="#popupBasic" data-rel="popup" data-inline="true" data-transition="pop" data-icon="gear" data-iconpos="top"></a></li> -->
+			<li><a href="#page" data-icon="home" data-iconpos="top"></a></li>
+			<li><a href="javascript:location.reload()" data-transition="slidedown" data-icon="arrow-r" data-iconpos="top"></a></li>
+		</ul>
+	</div>
+	</div>
+	<!-- /footer -->
+</div>
+<!-- /page2 -->
+
+</body>
+</html>
